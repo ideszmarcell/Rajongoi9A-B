@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+  color: grey;
+}
 /* From Uiverse.io by Smit-Prajapati */ 
 .radio-container {
   --main-color: #f7e479;
