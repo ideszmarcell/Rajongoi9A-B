@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Magyarország fan pages</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img width="75px" src="Pictures/Földrajz/Zászló címerrel.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="etelek.html">Ételek</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kultura.html">Kultúra</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="foldrajz.html">Földrajz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rolunk.html">Rólunk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Kvíz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <h4>1. Mi Magyarország fővárosa?</h4>
+                <div>
+                    <input type="radio" name="q1" value="Budapest"> Budapest<br>
+                    <input type="radio" name="q1" value="Szeged"> Szeged<br>
+                    <input type="radio" name="q1" value="Debrecen"> Debrecen<br>
+                </div>
+            </div>
+            <div class="question">
+                <h4>2. Melyik a legnagyobb magyar tó?</h4>
+                <div>
+                    <input type="radio" name="q2" value="Balaton"> Balaton<br>
+                    <input type="radio" name="q2" value="Tisza"> Tisza<br>
+                    <input type="radio" name="q2" value="Velencei-tó"> Velencei-tó<br>
+                </div>
+            </div>
+            <div class="question">
+                <h4>3. Melyik évben csatlakozott Magyarország az EU-hoz?</h4>
+                <div>
+                    <input type="radio" name="q3" value="2004"> 2004<br>
+                    <input type="radio" name="q3" value="2007"> 2007<br>
+                    <input type="radio" name="q3" value="2010"> 2010<br>
+                </div>
+            </div class="quiz-button">
+            <button type="button" class="btn btn-primary" onclick="submitQuiz()">Küldés</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const totalQuestions = 3;
+
+            // Ellenőrizzük a válaszokat
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+
+            if (q1 && q1.value === "Budapest") score++;
+            if (q2 && q2.value === "Balaton") score++;
+            if (q3 && q3.value === "2004") score++;
+
+            // Eredmény megjelenítése
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = `<h3>Te pontszámod: ${score} / ${totalQuestions}</h3>`;
+        }
+    </script>
+
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
