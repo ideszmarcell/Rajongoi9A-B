@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Magyarország fan pages</title>
-    <style>
-        body {
-            background-color: black; /* Fekete háttér */
-            color: gray; /* Szürke szöveg */
-        }
-    </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -34,25 +28,33 @@
                 <a class="nav-link" href="foldrajz.html">Földrajz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="rolunk.html">Rólunk</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="quiz.html">Quiz</a>
-        </li>
+                <a class="nav-link" href="rolunk.html">Rólunk</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="quiz.html">Quiz</a>
+            </li>
         </ul>
     </div>
 </nav>
 
-<div class="container" style="margin-top: 50px;"> <!-- Margin-top to avoid navbar overlap -->
-    <h1>Magyarország</h1>
-    <p>Magyarország egy Közép-európai ország, ami a Kárpát-medence közepén fekszik. <br>
-        Államformája: Parlamentáris köztársaság <br>
-        Köztársasági elnök: Sulyok Tamás <br>
-        Területe: 93 022 km² <br>
-        Nyugatról Ausztria, Északról Szlovákia, Észak-Keletről Ukrajna, Keletről Románia, Délről Szerbia és Dél-Nyugatról Horvátország és Szlovénia határolja. <br>
-        21. századra az ország népessége 10 millió alá csökkent. <br>
-        A magyar nyelv az Urál nyelvcsalád alá tartozik. <br>
-        Fővárosa és egyben legnépesebb városa: Budapest.</p>
+<div class="title-section"> 
+    <h1>Magyarország</h1> 
+</div>
+
+<div class="container" style="margin-top: 70px;"> <!-- Margin-top to avoid navbar overlap -->
+    <div class="row">
+        <div class="col-md-6 text-section">
+            <p>Magyarország egy Közép-európai ország, ami a Kárpát-medence közepén fekszik. <br>
+            Államformája: Parlamentáris köztársaság. <br>
+            Fővárosa: Budapest. <br>
+            Népessége: 10 millió. <br>
+            Nyelv: Magyar. <br>
+            Nyugatról Ausztria, Északról Szlovákia, Észak-Keletről Ukrajna, Keletről Románia, Délről Szerbia és Dél-Nyugatról Horvátország és Szlovénia határolja.</p>
+        </div>
+        <div class="col-md-6 map-section">
+            <img src="Pictures/Földrajz/Térkép.jpg" alt="Térkép" class="img-fluid">
+        </div>
+    </div>
 </div>
 
 <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>

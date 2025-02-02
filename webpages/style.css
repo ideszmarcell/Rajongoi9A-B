@@ -1,6 +1,9 @@
 body {
   padding-top: 56px; /* A navbar magassága */
-  background-color: black;
-  color: white;
+  background-color: black;  /* Fekete háttér */
+  color: gray; /* Szürke szöveg */
 }
-
+h1{
+  text-align: center;
+  padding-top: 20px;
+}
