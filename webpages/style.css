@@ -127,3 +127,9 @@ button svg {
 button:hover svg {
   transform: translateY(-50%) rotate(-90deg);
 }
+
+
+.backbutton {
+  display: grid;
+place-items: center;
+}
