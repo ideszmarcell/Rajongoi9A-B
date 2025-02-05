@@ -210,3 +210,7 @@ place-items: center;
   justify-content: center;
 }
 
+.image {
+  height: 100px;
+  width: 80px;
+}
