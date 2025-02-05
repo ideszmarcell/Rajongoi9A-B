@@ -204,3 +204,9 @@ place-items: center;
   color: white;
   cursor: pointer;
 }
+.content2 {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
+
