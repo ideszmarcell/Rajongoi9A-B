@@ -284,5 +284,12 @@ place-items: center;
 
 .carousel-item img{
   height: 400px;
+food_cards_commit_grid
+}
+
+.row{
+display: grid;
+place-items: center;
   object-fit: cover;
+main
 }
