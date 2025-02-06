@@ -11,6 +11,16 @@
             background-color: black; /* Fekete háttér */
             color: gray; /* Szürke szöveg */
         }
+        .carousel-control-prev,
+        .carousel-control-next {
+            transition: background-color 0.3s ease;
+            margin-top: 25%;
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            color: rgba(0, 0, 0, 0);
+        }
     </style>
 </head>
 <body>
@@ -91,14 +101,16 @@
                     <img src="Pictures/szép képek/fertő tó.jpg" class="d-block w-100" alt="Fertő tó">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-buttons">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         </div>
         <div class="backbutton">
