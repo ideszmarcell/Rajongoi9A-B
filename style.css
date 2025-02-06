@@ -276,3 +276,12 @@ place-items: center;
   scale: 0;
   transform: rotate(-45deg);
 }
+
+.carousel {
+  width: 700px;
+  height: 80%;
+}
+
+.carousel-item img{
+  height: 400px;
+}
