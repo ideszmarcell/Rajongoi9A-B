@@ -7,6 +7,10 @@ h1{
   text-align: center;
   padding-top: 20px;
 }
+h2{
+  text-align: center;
+  padding-top: 20px;
+}
 .container {
   margin-top: 20px;
 }
@@ -291,5 +295,4 @@ food_cards_commit_grid
 display: grid;
 place-items: center;
   object-fit: cover;
-main
-}
+
