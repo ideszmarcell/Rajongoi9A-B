@@ -7,6 +7,10 @@ h1{
   text-align: center;
   padding-top: 20px;
 }
+h2{
+  text-align: center;
+  padding-top: 20px;
+}
 .container {
   margin-top: 20px;
 }
@@ -286,3 +290,4 @@ place-items: center;
   height: 400px;
   object-fit: cover;
 }
+
