@@ -296,3 +296,7 @@ display: grid;
 place-items: center;
   object-fit: cover;
 
+
+  .row{}
+
+}
