@@ -290,16 +290,7 @@ place-items: center;
   height: 400px;
 }
 
-.row{
-
-display: grid;
-place-items: center;
-  object-fit: cover;
-
-
-  .row{}
-
-}
-gap: 75px;
+.row {
+gap: 85px;
 }
 
