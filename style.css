@@ -1,7 +1,7 @@
 body {
-  padding-top: 56px; /* A navbar magassága */
-  background-color: black;  /* Fekete háttér */
-  color: gray; /* Szürke szöveg */
+  padding-top: 56px; 
+  background-color: black; 
+  color: gray; 
 }
 h1{
   text-align: center;
@@ -41,7 +41,6 @@ h1 {
   text-align: center;
 }
 
-/* From Uiverse.io by satyamchaudharydev */ 
 button {
   width: 140px;
   height: 56px;
@@ -119,7 +118,7 @@ button:hover .clone > :nth-child(3) {
 button:hover .clone > :nth-child(4) {
   transition-delay: 0.3s;
 }
-/* icon style and hover */
+
 button svg {
   width: 20px;
   right: 0;
