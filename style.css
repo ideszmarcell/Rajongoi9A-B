@@ -299,3 +299,9 @@ place-items: center;
   max-width: 700;
   padding-top: 0px;
 }
+
+.meme{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
