@@ -304,3 +304,17 @@ place-items: center;
   margin-left: auto;
   margin-right: auto;
 }
+
+.carousel-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding-bottom: 400px;
+}
+
+.carousel-inner2 img {
+  width: 100%;
+  height: 400px;
+}
