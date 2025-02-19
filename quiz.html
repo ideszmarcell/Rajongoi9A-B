@@ -161,7 +161,6 @@
             let score = 0;
             const totalQuestions = 12;
 
-            // Ellenőrizzük a válaszokat
             const q1 = document.querySelector('input[name="q1"]:checked');
             const q2 = document.querySelector('input[name="q2"]:checked');
             const q3 = document.querySelector('input[name="q3"]:checked');
@@ -188,7 +187,6 @@
             if (q11 && q11.value === "A dió rontás ellen jó, a mák pedig bőséget hoz") score++;
             if (q12 && q12.value === "Balatonfüred") score++;
 
-            // Eredmény megjelenítése
             const resultDiv = document.getElementById("result");
             resultDiv.innerHTML = `<h3>Te pontszámod: ${score} / ${totalQuestions}</h3>`;
         }
